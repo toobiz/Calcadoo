@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Calculate"; ObjectID = "Bok-7F-4TK"; */
+"Bok-7F-4TK.normalTitle" = "Calculate";
+
+/* Class = "UILabel"; text = "Set your score"; ObjectID = "QHQ-6d-4UM"; */
+"QHQ-6d-4UM.text" = "Set your score";
+
+/* Class = "UITextField"; placeholder = "max"; ObjectID = "Uzv-V1-FL7"; */
+"Uzv-V1-FL7.placeholder" = "max";
+
+/* Class = "UITextField"; placeholder = "score"; ObjectID = "jnS-Qi-5TD"; */
+"jnS-Qi-5TD.placeholder" = "score";

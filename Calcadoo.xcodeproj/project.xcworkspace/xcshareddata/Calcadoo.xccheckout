@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>FFAF94E8-A18C-4F88-A086-FA06393F9E76</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Calcadoo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DBC0F110EC54E5C7AEA04A040E6C4E9AF4DD6D70</key>
+		<string>https://github.com/toobiz/Programming.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Experimental/Calcadoo-Kasia/Calcadoo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DBC0F110EC54E5C7AEA04A040E6C4E9AF4DD6D70</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/toobiz/Programming.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DBC0F110EC54E5C7AEA04A040E6C4E9AF4DD6D70</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DBC0F110EC54E5C7AEA04A040E6C4E9AF4DD6D70</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Programming</string>
+		</dict>
+	</array>
+</dict>
+</plist>
