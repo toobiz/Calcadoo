@@ -13,6 +13,9 @@
 		272A0C731B1CC93000C373F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272A0C711B1CC93000C373F4 /* Main.storyboard */; };
 		272A0C781B1CC93000C373F4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 272A0C761B1CC93000C373F4 /* LaunchScreen.xib */; };
 		272A0C841B1CC93100C373F4 /* CalcadooTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 272A0C831B1CC93100C373F4 /* CalcadooTests.m */; };
+		2762FBE51C9375C900A60257 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2762FBE31C9375C900A60257 /* Fabric.framework */; };
+		2762FBE61C9375C900A60257 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2762FBE41C9375C900A60257 /* Crashlytics.framework */; };
+		2762FBE81C93797600A60257 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2762FBE71C93797600A60257 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,9 @@
 		272A0C7D1B1CC93000C373F4 /* CalcadooTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalcadooTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		272A0C821B1CC93000C373F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		272A0C831B1CC93100C373F4 /* CalcadooTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalcadooTests.m; sourceTree = "<group>"; };
+		2762FBE31C9375C900A60257 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		2762FBE41C9375C900A60257 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		2762FBE71C93797600A60257 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		2795CF671B28853B004A0A86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2762FBE61C9375C900A60257 /* Crashlytics.framework in Frameworks */,
+				2762FBE51C9375C900A60257 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +70,9 @@
 		272A0C5B1B1CC93000C373F4 = {
 			isa = PBXGroup;
 			children = (
+				2762FBE71C93797600A60257 /* Media.xcassets */,
+				2762FBE31C9375C900A60257 /* Fabric.framework */,
+				2762FBE41C9375C900A60257 /* Crashlytics.framework */,
 				272A0C661B1CC93000C373F4 /* Calcadoo */,
 				272A0C801B1CC93000C373F4 /* CalcadooTests */,
 				272A0C651B1CC93000C373F4 /* Products */,
@@ -127,6 +138,7 @@
 				272A0C601B1CC93000C373F4 /* Sources */,
 				272A0C611B1CC93000C373F4 /* Frameworks */,
 				272A0C621B1CC93000C373F4 /* Resources */,
+				2762FBE21C9375A800A60257 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -199,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				272A0C731B1CC93000C373F4 /* Main.storyboard in Resources */,
+				2762FBE81C93797600A60257 /* Media.xcassets in Resources */,
 				272A0C781B1CC93000C373F4 /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,6 +224,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2762FBE21C9375A800A60257 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run cc0d76f18ca37e9e9fb6ab986e6b31ddfa085023 f9ff2d3d9ef7ca10b2ca837a4d52aefa9527340b42fc1327a1e46bb6fdb80577";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		272A0C601B1CC93000C373F4 /* Sources */ = {
@@ -348,6 +377,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Calcadoo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -364,6 +397,10 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Calcadoo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
