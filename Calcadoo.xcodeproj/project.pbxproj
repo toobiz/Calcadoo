@@ -178,7 +178,8 @@
 				TargetAttributes = {
 					272A0C631B1CC93000C373F4 = {
 						CreatedOnToolsVersion = 6.3.2;
-						DevelopmentTeam = C86MQ83WJ8;
+						DevelopmentTeam = AFD55YHYZ6;
+						ProvisioningStyle = Manual;
 					};
 					272A0C7C1B1CC93000C373F4 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -377,6 +378,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = AFD55YHYZ6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -384,10 +386,11 @@
 				INFOPLIST_FILE = Calcadoo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tubis.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.tubis.Calcadoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d93bed84-5f06-4595-8ac6-ac5d5fd48565";
 				"PROVISIONING_PROFILE[sdk=*]" = "";
+				PROVISIONING_PROFILE_SPECIFIER = "Calcadoo Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -397,6 +400,7 @@
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = AFD55YHYZ6;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -404,9 +408,10 @@
 				INFOPLIST_FILE = Calcadoo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.tubis.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.tubis.Calcadoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "d93bed84-5f06-4595-8ac6-ac5d5fd48565";
+				PROVISIONING_PROFILE_SPECIFIER = "Calcadoo Development";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
