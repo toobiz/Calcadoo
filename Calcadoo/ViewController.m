@@ -27,7 +27,7 @@
 }
 
 
-- (IBAction)calculate:(id)sender {
+- (IBAction)sprawdzian:(id)sender {
     
     // grab content of text field and set integers
     NSString *score = [self.scoreField text];

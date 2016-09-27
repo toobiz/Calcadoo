@@ -47,19 +47,6 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="GcP-Em-uvx"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bok-7F-4TK">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="DyK-lL-yUh"/>
-                                    <constraint firstAttribute="width" constant="114" id="yGd-mj-egG"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Sprawdzian">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="calculate:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jcl-Bz-y4p"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B7N-hp-JPB">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="7Wc-mq-Vsw"/>
@@ -118,15 +105,28 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbC-EB-F1V">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="A92-sM-Lox"/>
+                                    <constraint firstAttribute="width" constant="114" id="n0n-pN-KT5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Sprawdzian">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sprawdzian:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GoK-Kw-TW3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.21826134999999999" green="0.76708779520000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="B7N-hp-JPB" firstAttribute="top" secondItem="Bok-7F-4TK" secondAttribute="bottom" constant="14" id="1he-Ou-JRv"/>
                             <constraint firstItem="jnS-Qi-5TD" firstAttribute="top" secondItem="QHQ-6d-4UM" secondAttribute="bottom" constant="16" id="3rY-Zy-A0V"/>
                             <constraint firstItem="9JN-k8-LFn" firstAttribute="top" secondItem="Ihx-Jw-UO9" secondAttribute="bottom" id="5FB-Ns-vFV"/>
-                            <constraint firstItem="Bok-7F-4TK" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="6kK-Uy-Rh1"/>
                             <constraint firstItem="IHX-kL-RkD" firstAttribute="top" secondItem="BFh-FR-swm" secondAttribute="bottom" constant="21" id="9eS-ud-dO7"/>
                             <constraint firstItem="rW0-pD-m9o" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Deg-zw-Z6S"/>
+                            <constraint firstItem="pbC-EB-F1V" firstAttribute="top" secondItem="Uzv-V1-FL7" secondAttribute="bottom" constant="23" id="Ma3-Ac-qwA"/>
+                            <constraint firstItem="B7N-hp-JPB" firstAttribute="top" secondItem="pbC-EB-F1V" secondAttribute="bottom" constant="8" id="MhV-yc-EKa"/>
                             <constraint firstItem="B7N-hp-JPB" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Phe-dM-hzD"/>
                             <constraint firstItem="jnS-Qi-5TD" firstAttribute="width" secondItem="Uzv-V1-FL7" secondAttribute="width" constant="-6" id="Sjw-Cz-hq7"/>
                             <constraint firstItem="9JN-k8-LFn" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ThE-vD-Zcn"/>
@@ -139,7 +139,7 @@
                             <constraint firstItem="QHQ-6d-4UM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="58" id="e2t-TW-cuJ"/>
                             <constraint firstItem="BFh-FR-swm" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="nuk-4s-lGo"/>
                             <constraint firstItem="Ihx-Jw-UO9" firstAttribute="top" secondItem="B7N-hp-JPB" secondAttribute="bottom" constant="106" id="qbp-GV-Nq1"/>
-                            <constraint firstItem="Bok-7F-4TK" firstAttribute="top" secondItem="Uzv-V1-FL7" secondAttribute="bottom" constant="17" id="wnS-ob-cs2"/>
+                            <constraint firstItem="pbC-EB-F1V" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="t18-AT-LWB"/>
                             <constraint firstItem="Uzv-V1-FL7" firstAttribute="top" secondItem="QHQ-6d-4UM" secondAttribute="bottom" constant="16" id="xhG-47-5bX"/>
                             <constraint firstItem="IHX-kL-RkD" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="xxp-QJ-UrW"/>
                         </constraints>

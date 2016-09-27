@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2711A9891D9B2BA500DC2C5C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2711A9881D9B2BA500DC2C5C /* Media.xcassets */; };
 		272A0C6A1B1CC93000C373F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 272A0C691B1CC93000C373F4 /* main.m */; };
 		272A0C6D1B1CC93000C373F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 272A0C6C1B1CC93000C373F4 /* AppDelegate.m */; };
 		272A0C701B1CC93000C373F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272A0C6F1B1CC93000C373F4 /* ViewController.m */; };
@@ -15,7 +16,6 @@
 		272A0C841B1CC93100C373F4 /* CalcadooTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 272A0C831B1CC93100C373F4 /* CalcadooTests.m */; };
 		2762FBE51C9375C900A60257 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2762FBE31C9375C900A60257 /* Fabric.framework */; };
 		2762FBE61C9375C900A60257 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2762FBE41C9375C900A60257 /* Crashlytics.framework */; };
-		2762FBE81C93797600A60257 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2762FBE71C93797600A60257 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2711A9881D9B2BA500DC2C5C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		272A0C641B1CC93000C373F4 /* Calcadoo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calcadoo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		272A0C681B1CC93000C373F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		272A0C691B1CC93000C373F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -43,7 +44,6 @@
 		272A0C831B1CC93100C373F4 /* CalcadooTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalcadooTests.m; sourceTree = "<group>"; };
 		2762FBE31C9375C900A60257 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		2762FBE41C9375C900A60257 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		2762FBE71C93797600A60257 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		2795CF671B28853B004A0A86 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +70,6 @@
 		272A0C5B1B1CC93000C373F4 = {
 			isa = PBXGroup;
 			children = (
-				2762FBE71C93797600A60257 /* Media.xcassets */,
 				2762FBE31C9375C900A60257 /* Fabric.framework */,
 				2762FBE41C9375C900A60257 /* Crashlytics.framework */,
 				272A0C661B1CC93000C373F4 /* Calcadoo */,
@@ -97,6 +96,7 @@
 				272A0C6F1B1CC93000C373F4 /* ViewController.m */,
 				272A0C711B1CC93000C373F4 /* Main.storyboard */,
 				272A0C761B1CC93000C373F4 /* LaunchScreen.xib */,
+				2711A9881D9B2BA500DC2C5C /* Media.xcassets */,
 				272A0C671B1CC93000C373F4 /* Supporting Files */,
 			);
 			path = Calcadoo;
@@ -212,7 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				272A0C731B1CC93000C373F4 /* Main.storyboard in Resources */,
-				2762FBE81C93797600A60257 /* Media.xcassets in Resources */,
+				2711A9891D9B2BA500DC2C5C /* Media.xcassets in Resources */,
 				272A0C781B1CC93000C373F4 /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +376,7 @@
 		272A0C881B1CC93100C373F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = AFD55YHYZ6;
@@ -398,6 +399,7 @@
 		272A0C891B1CC93100C373F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = AFD55YHYZ6;
